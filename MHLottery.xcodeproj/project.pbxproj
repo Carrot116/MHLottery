@@ -1,0 +1,784 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		081A87071C8496AB002C54B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 081A87061C8496AB002C54B8 /* main.m */; };
+		081A870A1C8496AB002C54B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 081A87091C8496AB002C54B8 /* AppDelegate.m */; };
+		081A87101C8496AB002C54B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081A870E1C8496AB002C54B8 /* Main.storyboard */; };
+		081A87121C8496AB002C54B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081A87111C8496AB002C54B8 /* Assets.xcassets */; };
+		081A87151C8496AB002C54B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081A87131C8496AB002C54B8 /* LaunchScreen.storyboard */; };
+		081A87201C8496AB002C54B8 /* MHLotteryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 081A871F1C8496AB002C54B8 /* MHLotteryTests.m */; };
+		081A872B1C8496AB002C54B8 /* MHLotteryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 081A872A1C8496AB002C54B8 /* MHLotteryUITests.m */; };
+		089AF62E1C849DAF004FB98C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 089AF62D1C849DAF004FB98C /* ViewController.m */; };
+		089AF6311C849F7D004FB98C /* MHTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 089AF6301C849F7D004FB98C /* MHTabBar.m */; };
+		089AF6341C849FB6004FB98C /* MHTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 089AF6331C849FB6004FB98C /* MHTabBarButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		081A871C1C8496AB002C54B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 081A86FA1C8496AB002C54B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 081A87011C8496AB002C54B8;
+			remoteInfo = MHLottery;
+		};
+		081A87271C8496AB002C54B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 081A86FA1C8496AB002C54B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 081A87011C8496AB002C54B8;
+			remoteInfo = MHLottery;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		081A87021C8496AB002C54B8 /* MHLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		081A87061C8496AB002C54B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		081A87081C8496AB002C54B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		081A87091C8496AB002C54B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		081A870F1C8496AB002C54B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		081A87111C8496AB002C54B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		081A87141C8496AB002C54B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		081A87161C8496AB002C54B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		081A871B1C8496AB002C54B8 /* MHLotteryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHLotteryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		081A871F1C8496AB002C54B8 /* MHLotteryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHLotteryTests.m; sourceTree = "<group>"; };
+		081A87211C8496AB002C54B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		081A87261C8496AB002C54B8 /* MHLotteryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHLotteryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		081A872A1C8496AB002C54B8 /* MHLotteryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHLotteryUITests.m; sourceTree = "<group>"; };
+		081A872C1C8496AB002C54B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		089AF62C1C849DAF004FB98C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Classes/ViewController.h; sourceTree = "<group>"; };
+		089AF62D1C849DAF004FB98C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Classes/ViewController.m; sourceTree = "<group>"; };
+		089AF62F1C849F7D004FB98C /* MHTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHTabBar.h; path = Classes/MHTabBar.h; sourceTree = "<group>"; };
+		089AF6301C849F7D004FB98C /* MHTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHTabBar.m; path = Classes/MHTabBar.m; sourceTree = "<group>"; };
+		089AF6321C849FB6004FB98C /* MHTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHTabBarButton.h; path = Classes/MHTabBarButton.h; sourceTree = "<group>"; };
+		089AF6331C849FB6004FB98C /* MHTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHTabBarButton.m; path = Classes/MHTabBarButton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		081A86FF1C8496AB002C54B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		081A87181C8496AB002C54B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		081A87231C8496AB002C54B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		081A86F91C8496AB002C54B8 = {
+			isa = PBXGroup;
+			children = (
+				081A87041C8496AB002C54B8 /* MHLottery */,
+				081A871E1C8496AB002C54B8 /* MHLotteryTests */,
+				081A87291C8496AB002C54B8 /* MHLotteryUITests */,
+				081A87031C8496AB002C54B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		081A87031C8496AB002C54B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				081A87021C8496AB002C54B8 /* MHLottery.app */,
+				081A871B1C8496AB002C54B8 /* MHLotteryTests.xctest */,
+				081A87261C8496AB002C54B8 /* MHLotteryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		081A87041C8496AB002C54B8 /* MHLottery */ = {
+			isa = PBXGroup;
+			children = (
+				081A873A1C849828002C54B8 /* Resources */,
+				081A87391C849812002C54B8 /* Classes */,
+				081A87381C8497A0002C54B8 /* Delegate */,
+				081A87051C8496AB002C54B8 /* Supporting Files */,
+			);
+			path = MHLottery;
+			sourceTree = "<group>";
+		};
+		081A87051C8496AB002C54B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				081A87131C8496AB002C54B8 /* LaunchScreen.storyboard */,
+				081A87161C8496AB002C54B8 /* Info.plist */,
+				081A87061C8496AB002C54B8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		081A871E1C8496AB002C54B8 /* MHLotteryTests */ = {
+			isa = PBXGroup;
+			children = (
+				081A871F1C8496AB002C54B8 /* MHLotteryTests.m */,
+				081A87211C8496AB002C54B8 /* Info.plist */,
+			);
+			path = MHLotteryTests;
+			sourceTree = "<group>";
+		};
+		081A87291C8496AB002C54B8 /* MHLotteryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				081A872A1C8496AB002C54B8 /* MHLotteryUITests.m */,
+				081A872C1C8496AB002C54B8 /* Info.plist */,
+			);
+			path = MHLotteryUITests;
+			sourceTree = "<group>";
+		};
+		081A87381C8497A0002C54B8 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				081A87081C8496AB002C54B8 /* AppDelegate.h */,
+				081A87091C8496AB002C54B8 /* AppDelegate.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		081A87391C849812002C54B8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				089AF6111C849BC5004FB98C /* Hall(购彩大厅) */,
+				089AF6121C849BD2004FB98C /* Documentary(合买跟单) */,
+				089AF6131C849C24004FB98C /* Open(开奖信息) */,
+				089AF6151C849C41004FB98C /* Lucky(幸运广场) */,
+				089AF6141C849C3E004FB98C /* Me(我的彩票) */,
+				089AF6161C849C84004FB98C /* Setting(设置) */,
+				081A873B1C849870002C54B8 /* Main */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		081A873A1C849828002C54B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				081A87111C8496AB002C54B8 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		081A873B1C849870002C54B8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				089AF6191C849CA3004FB98C /* Model */,
+				089AF6181C849CA0004FB98C /* View */,
+				089AF6171C849C9D004FB98C /* Controller */,
+				081A870E1C8496AB002C54B8 /* Main.storyboard */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		089AF6111C849BC5004FB98C /* Hall(购彩大厅) */ = {
+			isa = PBXGroup;
+			children = (
+				089AF62B1C849D59004FB98C /* Model */,
+				089AF62A1C849D57004FB98C /* View */,
+				089AF6291C849D54004FB98C /* Contrllelr */,
+			);
+			name = "Hall(购彩大厅)";
+			sourceTree = "<group>";
+		};
+		089AF6121C849BD2004FB98C /* Documentary(合买跟单) */ = {
+			isa = PBXGroup;
+			children = (
+				089AF6281C849D43004FB98C /* Model */,
+				089AF6271C849D40004FB98C /* View */,
+				089AF6261C849D3C004FB98C /* Controller */,
+			);
+			name = "Documentary(合买跟单)";
+			sourceTree = "<group>";
+		};
+		089AF6131C849C24004FB98C /* Open(开奖信息) */ = {
+			isa = PBXGroup;
+			children = (
+				089AF6251C849D28004FB98C /* Model */,
+				089AF6241C849D24004FB98C /* View */,
+				089AF6231C849D1E004FB98C /* Controller */,
+			);
+			name = "Open(开奖信息)";
+			sourceTree = "<group>";
+		};
+		089AF6141C849C3E004FB98C /* Me(我的彩票) */ = {
+			isa = PBXGroup;
+			children = (
+				089AF61F1C849CE7004FB98C /* Model */,
+				089AF61E1C849CE4004FB98C /* View */,
+				089AF61D1C849CE1004FB98C /* Controller */,
+			);
+			name = "Me(我的彩票)";
+			sourceTree = "<group>";
+		};
+		089AF6151C849C41004FB98C /* Lucky(幸运广场) */ = {
+			isa = PBXGroup;
+			children = (
+				089AF6221C849D0E004FB98C /* Model */,
+				089AF6211C849D0A004FB98C /* View */,
+				089AF6201C849D07004FB98C /* Controller */,
+			);
+			name = "Lucky(幸运广场)";
+			sourceTree = "<group>";
+		};
+		089AF6161C849C84004FB98C /* Setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				089AF61C1C849CC1004FB98C /* Model */,
+				089AF61B1C849CBE004FB98C /* View */,
+				089AF61A1C849CB9004FB98C /* Controller */,
+			);
+			name = "Setting(设置)";
+			sourceTree = "<group>";
+		};
+		089AF6171C849C9D004FB98C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				089AF62C1C849DAF004FB98C /* ViewController.h */,
+				089AF62D1C849DAF004FB98C /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		089AF6181C849CA0004FB98C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				089AF62F1C849F7D004FB98C /* MHTabBar.h */,
+				089AF6301C849F7D004FB98C /* MHTabBar.m */,
+				089AF6321C849FB6004FB98C /* MHTabBarButton.h */,
+				089AF6331C849FB6004FB98C /* MHTabBarButton.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		089AF6191C849CA3004FB98C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		089AF61A1C849CB9004FB98C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		089AF61B1C849CBE004FB98C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		089AF61C1C849CC1004FB98C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		089AF61D1C849CE1004FB98C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		089AF61E1C849CE4004FB98C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		089AF61F1C849CE7004FB98C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		089AF6201C849D07004FB98C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		089AF6211C849D0A004FB98C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		089AF6221C849D0E004FB98C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		089AF6231C849D1E004FB98C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		089AF6241C849D24004FB98C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		089AF6251C849D28004FB98C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		089AF6261C849D3C004FB98C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		089AF6271C849D40004FB98C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		089AF6281C849D43004FB98C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		089AF6291C849D54004FB98C /* Contrllelr */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Contrllelr;
+			sourceTree = "<group>";
+		};
+		089AF62A1C849D57004FB98C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		089AF62B1C849D59004FB98C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		081A87011C8496AB002C54B8 /* MHLottery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 081A872F1C8496AB002C54B8 /* Build configuration list for PBXNativeTarget "MHLottery" */;
+			buildPhases = (
+				081A86FE1C8496AB002C54B8 /* Sources */,
+				081A86FF1C8496AB002C54B8 /* Frameworks */,
+				081A87001C8496AB002C54B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MHLottery;
+			productName = MHLottery;
+			productReference = 081A87021C8496AB002C54B8 /* MHLottery.app */;
+			productType = "com.apple.product-type.application";
+		};
+		081A871A1C8496AB002C54B8 /* MHLotteryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 081A87321C8496AB002C54B8 /* Build configuration list for PBXNativeTarget "MHLotteryTests" */;
+			buildPhases = (
+				081A87171C8496AB002C54B8 /* Sources */,
+				081A87181C8496AB002C54B8 /* Frameworks */,
+				081A87191C8496AB002C54B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				081A871D1C8496AB002C54B8 /* PBXTargetDependency */,
+			);
+			name = MHLotteryTests;
+			productName = MHLotteryTests;
+			productReference = 081A871B1C8496AB002C54B8 /* MHLotteryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		081A87251C8496AB002C54B8 /* MHLotteryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 081A87351C8496AB002C54B8 /* Build configuration list for PBXNativeTarget "MHLotteryUITests" */;
+			buildPhases = (
+				081A87221C8496AB002C54B8 /* Sources */,
+				081A87231C8496AB002C54B8 /* Frameworks */,
+				081A87241C8496AB002C54B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				081A87281C8496AB002C54B8 /* PBXTargetDependency */,
+			);
+			name = MHLotteryUITests;
+			productName = MHLotteryUITests;
+			productReference = 081A87261C8496AB002C54B8 /* MHLotteryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		081A86FA1C8496AB002C54B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = carrot;
+				TargetAttributes = {
+					081A87011C8496AB002C54B8 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					081A871A1C8496AB002C54B8 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 081A87011C8496AB002C54B8;
+					};
+					081A87251C8496AB002C54B8 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 081A87011C8496AB002C54B8;
+					};
+				};
+			};
+			buildConfigurationList = 081A86FD1C8496AB002C54B8 /* Build configuration list for PBXProject "MHLottery" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 081A86F91C8496AB002C54B8;
+			productRefGroup = 081A87031C8496AB002C54B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				081A87011C8496AB002C54B8 /* MHLottery */,
+				081A871A1C8496AB002C54B8 /* MHLotteryTests */,
+				081A87251C8496AB002C54B8 /* MHLotteryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		081A87001C8496AB002C54B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081A87151C8496AB002C54B8 /* LaunchScreen.storyboard in Resources */,
+				081A87121C8496AB002C54B8 /* Assets.xcassets in Resources */,
+				081A87101C8496AB002C54B8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		081A87191C8496AB002C54B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		081A87241C8496AB002C54B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		081A86FE1C8496AB002C54B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				089AF6341C849FB6004FB98C /* MHTabBarButton.m in Sources */,
+				089AF62E1C849DAF004FB98C /* ViewController.m in Sources */,
+				081A870A1C8496AB002C54B8 /* AppDelegate.m in Sources */,
+				089AF6311C849F7D004FB98C /* MHTabBar.m in Sources */,
+				081A87071C8496AB002C54B8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		081A87171C8496AB002C54B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081A87201C8496AB002C54B8 /* MHLotteryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		081A87221C8496AB002C54B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081A872B1C8496AB002C54B8 /* MHLotteryUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		081A871D1C8496AB002C54B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 081A87011C8496AB002C54B8 /* MHLottery */;
+			targetProxy = 081A871C1C8496AB002C54B8 /* PBXContainerItemProxy */;
+		};
+		081A87281C8496AB002C54B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 081A87011C8496AB002C54B8 /* MHLottery */;
+			targetProxy = 081A87271C8496AB002C54B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		081A870E1C8496AB002C54B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				081A870F1C8496AB002C54B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		081A87131C8496AB002C54B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				081A87141C8496AB002C54B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		081A872D1C8496AB002C54B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		081A872E1C8496AB002C54B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		081A87301C8496AB002C54B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = MHLottery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carrot.vip.MHLottery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		081A87311C8496AB002C54B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = MHLottery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carrot.vip.MHLottery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		081A87331C8496AB002C54B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MHLotteryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carrot.vip.MHLotteryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MHLottery.app/MHLottery";
+			};
+			name = Debug;
+		};
+		081A87341C8496AB002C54B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MHLotteryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carrot.vip.MHLotteryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MHLottery.app/MHLottery";
+			};
+			name = Release;
+		};
+		081A87361C8496AB002C54B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MHLotteryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carrot.vip.MHLotteryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MHLottery;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		081A87371C8496AB002C54B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MHLotteryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carrot.vip.MHLotteryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MHLottery;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		081A86FD1C8496AB002C54B8 /* Build configuration list for PBXProject "MHLottery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				081A872D1C8496AB002C54B8 /* Debug */,
+				081A872E1C8496AB002C54B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		081A872F1C8496AB002C54B8 /* Build configuration list for PBXNativeTarget "MHLottery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				081A87301C8496AB002C54B8 /* Debug */,
+				081A87311C8496AB002C54B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		081A87321C8496AB002C54B8 /* Build configuration list for PBXNativeTarget "MHLotteryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				081A87331C8496AB002C54B8 /* Debug */,
+				081A87341C8496AB002C54B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		081A87351C8496AB002C54B8 /* Build configuration list for PBXNativeTarget "MHLotteryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				081A87361C8496AB002C54B8 /* Debug */,
+				081A87371C8496AB002C54B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 081A86FA1C8496AB002C54B8 /* Project object */;
+}
