@@ -10,6 +10,8 @@
 #import "MHTabBar.h"
 #import "MHTabBarButton.h"
 
+#define LATTER_IOS(version) ([[UIDevice currentDevice].systemVersion floatValue] >= (version))
+
 @interface ViewController () <MHTabBarDelegate>
 
 @end
@@ -30,6 +32,13 @@
         NSString* selName = [NSString stringWithFormat:@"TabBar%dSel", i+1];
         [myTabBar addBarButtonWithImage:name selImage:selName];
     }
+    
+    UIImage* navImage = [UIImage imageNamed:@"NavBar64"];
+    if (NO == LATTER_IOS(7.0)){
+        navImage = [UIImage imageNamed:@"NavBar"];
+    }
+    
+    [[UINavigationBar appearance]setBackgroundImage:navImage forBarMetrics:UIBarMetricsDefault];
 }
 
 
