@@ -14,7 +14,8 @@
 		081A87151C8496AB002C54B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081A87131C8496AB002C54B8 /* LaunchScreen.storyboard */; };
 		081A87201C8496AB002C54B8 /* MHLotteryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 081A871F1C8496AB002C54B8 /* MHLotteryTests.m */; };
 		081A872B1C8496AB002C54B8 /* MHLotteryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 081A872A1C8496AB002C54B8 /* MHLotteryUITests.m */; };
-		089AF62E1C849DAF004FB98C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 089AF62D1C849DAF004FB98C /* ViewController.m */; };
+		08227C281C8586A2007950FB /* MHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08227C271C8586A2007950FB /* MHNavigationController.m */; };
+		089AF62E1C849DAF004FB98C /* MHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 089AF62D1C849DAF004FB98C /* MHTabBarController.m */; };
 		089AF6311C849F7D004FB98C /* MHTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 089AF6301C849F7D004FB98C /* MHTabBar.m */; };
 		089AF6341C849FB6004FB98C /* MHTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 089AF6331C849FB6004FB98C /* MHTabBarButton.m */; };
 /* End PBXBuildFile section */
@@ -51,8 +52,10 @@
 		081A87261C8496AB002C54B8 /* MHLotteryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHLotteryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		081A872A1C8496AB002C54B8 /* MHLotteryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHLotteryUITests.m; sourceTree = "<group>"; };
 		081A872C1C8496AB002C54B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		089AF62C1C849DAF004FB98C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Classes/ViewController.h; sourceTree = "<group>"; };
-		089AF62D1C849DAF004FB98C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Classes/ViewController.m; sourceTree = "<group>"; };
+		08227C261C8586A2007950FB /* MHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHNavigationController.h; path = Classes/MHNavigationController.h; sourceTree = "<group>"; };
+		08227C271C8586A2007950FB /* MHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHNavigationController.m; path = Classes/MHNavigationController.m; sourceTree = "<group>"; };
+		089AF62C1C849DAF004FB98C /* MHTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHTabBarController.h; path = Classes/MHTabBarController.h; sourceTree = "<group>"; };
+		089AF62D1C849DAF004FB98C /* MHTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHTabBarController.m; path = Classes/MHTabBarController.m; sourceTree = "<group>"; };
 		089AF62F1C849F7D004FB98C /* MHTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHTabBar.h; path = Classes/MHTabBar.h; sourceTree = "<group>"; };
 		089AF6301C849F7D004FB98C /* MHTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHTabBar.m; path = Classes/MHTabBar.m; sourceTree = "<group>"; };
 		089AF6321C849FB6004FB98C /* MHTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHTabBarButton.h; path = Classes/MHTabBarButton.h; sourceTree = "<group>"; };
@@ -248,8 +251,10 @@
 		089AF6171C849C9D004FB98C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				089AF62C1C849DAF004FB98C /* ViewController.h */,
-				089AF62D1C849DAF004FB98C /* ViewController.m */,
+				089AF62C1C849DAF004FB98C /* MHTabBarController.h */,
+				089AF62D1C849DAF004FB98C /* MHTabBarController.m */,
+				08227C261C8586A2007950FB /* MHNavigationController.h */,
+				08227C271C8586A2007950FB /* MHNavigationController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -529,9 +534,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				089AF6341C849FB6004FB98C /* MHTabBarButton.m in Sources */,
-				089AF62E1C849DAF004FB98C /* ViewController.m in Sources */,
+				089AF62E1C849DAF004FB98C /* MHTabBarController.m in Sources */,
 				081A870A1C8496AB002C54B8 /* AppDelegate.m in Sources */,
 				089AF6311C849F7D004FB98C /* MHTabBar.m in Sources */,
+				08227C281C8586A2007950FB /* MHNavigationController.m in Sources */,
 				081A87071C8496AB002C54B8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -672,10 +678,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MHLottery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.carrot.vip.MHLottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -684,10 +694,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MHLottery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.carrot.vip.MHLottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

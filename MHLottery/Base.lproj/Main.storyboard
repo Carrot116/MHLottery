@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vh6-qV-oMb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vh6-qV-oMb">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tab Bar Controller-->
         <scene sceneID="RbH-2t-c9o">
             <objects>
-                <tabBarController id="vh6-qV-oMb" customClass="ViewController" sceneMemberID="viewController">
+                <tabBarController id="vh6-qV-oMb" customClass="MHTabBarController" sceneMemberID="viewController">
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="7sh-NZ-rFA">
@@ -31,7 +31,7 @@
         <!--Item-->
         <scene sceneID="7Yn-vG-2dO">
             <objects>
-                <navigationController id="jbY-zP-3IU" sceneMemberID="viewController">
+                <navigationController id="jbY-zP-3IU" customClass="MHNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="fyc-eh-9fH"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
@@ -47,14 +47,14 @@
             </objects>
             <point key="canvasLocation" x="119" y="-163"/>
         </scene>
-        <!--Table View Controller-->
+        <!--购彩大厅-->
         <scene sceneID="lsI-bU-1ZA">
             <objects>
                 <tableViewController id="JGa-Od-nMs" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="5Lz-Lt-243">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="I3C-BP-DHC">
                                 <rect key="frame" x="0.0" y="92" width="320" height="44"/>
@@ -70,7 +70,17 @@
                             <outlet property="delegate" destination="JGa-Od-nMs" id="LXM-8o-tyg"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="huw-2e-Tdb"/>
+                    <navigationItem key="navigationItem" title="购彩大厅" id="huw-2e-Tdb">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="2co-Ng-KPA">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Jzz-8N-9ub">
+                                <rect key="frame" x="237" y="11" width="67" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="咨讯" image="zixunBarFlat"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
                 </tableViewController>
@@ -81,7 +91,7 @@
         <!--Item-->
         <scene sceneID="GGA-9U-fuL">
             <objects>
-                <navigationController id="ItO-Fh-BVD" sceneMemberID="viewController">
+                <navigationController id="ItO-Fh-BVD" customClass="MHNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="bHm-KD-rSg"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
@@ -97,7 +107,7 @@
             </objects>
             <point key="canvasLocation" x="93" y="477"/>
         </scene>
-        <!--View Controller-->
+        <!--合买跟单-->
         <scene sceneID="5ym-bn-JNd">
             <objects>
                 <viewController id="aKq-Bx-Emi" sceneMemberID="viewController">
@@ -108,9 +118,18 @@
                     <view key="view" contentMode="scaleToFill" id="8yz-lF-m76">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="578"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9a-l7-euC">
+                                <rect key="frame" x="117" y="191" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="IB8-0G-jcI" kind="show" id="JX0-PE-m5i"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.86157045687832745" green="1" blue="0.45554967637062993" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="FfC-n8-mlj"/>
+                    <navigationItem key="navigationItem" title="合买跟单" id="FfC-n8-mlj"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="578"/>
                 </viewController>
@@ -118,10 +137,47 @@
             </objects>
             <point key="canvasLocation" x="565" y="462"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="ozM-Ui-CKn">
+            <objects>
+                <viewController id="IB8-0G-jcI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3hy-cn-okB"/>
+                        <viewControllerLayoutGuide type="bottom" id="UXU-dV-8Wg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dIT-0s-WjT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="578"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0g7-gT-UgX">
+                                <rect key="frame" x="50" y="114" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Fbw-QG-RSj">
+                                <rect key="frame" x="35" y="51" width="121" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XwO-BV-lwB">
+                                <rect key="frame" x="46" y="188" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LA5-bI-pPS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1129" y="473"/>
+        </scene>
         <!--Item-->
         <scene sceneID="Jdx-gT-NfM">
             <objects>
-                <navigationController id="8pA-cM-FzZ" sceneMemberID="viewController">
+                <navigationController id="8pA-cM-FzZ" customClass="MHNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="ON6-gw-3Un"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
@@ -137,7 +193,7 @@
             </objects>
             <point key="canvasLocation" x="71" y="1097"/>
         </scene>
-        <!--View Controller-->
+        <!--开奖信息-->
         <scene sceneID="IQZ-rP-4kF">
             <objects>
                 <viewController id="ZYu-4P-suT" sceneMemberID="viewController">
@@ -150,7 +206,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="JsH-RS-A4a"/>
+                    <navigationItem key="navigationItem" title="开奖信息" id="JsH-RS-A4a"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="578"/>
                 </viewController>
@@ -161,7 +217,7 @@
         <!--Item-->
         <scene sceneID="ukE-7l-6j1">
             <objects>
-                <navigationController id="XOy-O0-AL9" sceneMemberID="viewController">
+                <navigationController id="XOy-O0-AL9" customClass="MHNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="mdK-ER-YsC"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
@@ -177,7 +233,7 @@
             </objects>
             <point key="canvasLocation" x="71" y="1727"/>
         </scene>
-        <!--View Controller-->
+        <!--幸运广场-->
         <scene sceneID="UnC-qV-T7K">
             <objects>
                 <viewController id="hxs-RO-n1K" sceneMemberID="viewController">
@@ -190,7 +246,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="3Bb-zR-ble"/>
+                    <navigationItem key="navigationItem" title="幸运广场" id="3Bb-zR-ble"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="578"/>
                 </viewController>
@@ -201,7 +257,7 @@
         <!--Item-->
         <scene sceneID="Uc7-G1-pTe">
             <objects>
-                <navigationController id="xL7-p9-x1r" sceneMemberID="viewController">
+                <navigationController id="xL7-p9-x1r" customClass="MHNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Yf3-IZ-qfE"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
@@ -217,7 +273,7 @@
             </objects>
             <point key="canvasLocation" x="61" y="2371"/>
         </scene>
-        <!--View Controller-->
+        <!--我的彩票-->
         <scene sceneID="Ykh-9s-pwb">
             <objects>
                 <viewController id="hlx-Ul-kp7" sceneMemberID="viewController">
@@ -230,7 +286,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="0wf-Mp-fDI"/>
+                    <navigationItem key="navigationItem" title="我的彩票" id="0wf-Mp-fDI"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="578"/>
                 </viewController>
@@ -239,4 +295,7 @@
             <point key="canvasLocation" x="565" y="2371"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="zixunBarFlat" width="13" height="11"/>
+    </resources>
 </document>
