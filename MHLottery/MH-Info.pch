@@ -1,0 +1,22 @@
+//
+//  MH-Info.pch
+//  MHLottery
+//
+//  Created by carrot on 16/3/1.
+//  Copyright © 2016年 carrot. All rights reserved.
+//
+
+#ifndef MH_Info_pch
+#define MH_Info_pch
+
+#ifdef __OBJC__
+    #ifndef CHECK_IOS_VERSION
+        #define CHECK_IOS_VERSION
+        #define LATTER_IOS(version) ([[UIDevice currentDevice].systemVersion floatValue] >= (version))
+    #endif
+#endif
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* MH_Info_pch */

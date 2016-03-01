@@ -18,6 +18,8 @@
 		089AF62E1C849DAF004FB98C /* MHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 089AF62D1C849DAF004FB98C /* MHTabBarController.m */; };
 		089AF6311C849F7D004FB98C /* MHTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 089AF6301C849F7D004FB98C /* MHTabBar.m */; };
 		089AF6341C849FB6004FB98C /* MHTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 089AF6331C849FB6004FB98C /* MHTabBarButton.m */; };
+		08F181751C85BDD9000FFBAF /* MHIconButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F181741C85BDD9000FFBAF /* MHIconButton.m */; };
+		08FD64441C85D08E00DDFE3C /* MHHmgdController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FD64431C85D08E00DDFE3C /* MHHmgdController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,11 @@
 		089AF6301C849F7D004FB98C /* MHTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHTabBar.m; path = Classes/MHTabBar.m; sourceTree = "<group>"; };
 		089AF6321C849FB6004FB98C /* MHTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHTabBarButton.h; path = Classes/MHTabBarButton.h; sourceTree = "<group>"; };
 		089AF6331C849FB6004FB98C /* MHTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHTabBarButton.m; path = Classes/MHTabBarButton.m; sourceTree = "<group>"; };
+		08F181731C85BDD9000FFBAF /* MHIconButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHIconButton.h; sourceTree = "<group>"; };
+		08F181741C85BDD9000FFBAF /* MHIconButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHIconButton.m; sourceTree = "<group>"; };
+		08FD64411C85C37C00DDFE3C /* MH-Info.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MH-Info.pch"; sourceTree = "<group>"; };
+		08FD64421C85D08E00DDFE3C /* MHHmgdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHHmgdController.h; path = Classes/MHHmgdController.h; sourceTree = "<group>"; };
+		08FD64431C85D08E00DDFE3C /* MHHmgdController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHHmgdController.m; path = Classes/MHHmgdController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +131,7 @@
 				081A87131C8496AB002C54B8 /* LaunchScreen.storyboard */,
 				081A87161C8496AB002C54B8 /* Info.plist */,
 				081A87061C8496AB002C54B8 /* main.m */,
+				08FD64411C85C37C00DDFE3C /* MH-Info.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -364,6 +372,8 @@
 		089AF6261C849D3C004FB98C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				08FD64421C85D08E00DDFE3C /* MHHmgdController.h */,
+				08FD64431C85D08E00DDFE3C /* MHHmgdController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -371,6 +381,8 @@
 		089AF6271C849D40004FB98C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				08F181731C85BDD9000FFBAF /* MHIconButton.h */,
+				08F181741C85BDD9000FFBAF /* MHIconButton.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -534,10 +546,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				089AF6341C849FB6004FB98C /* MHTabBarButton.m in Sources */,
+				08F181751C85BDD9000FFBAF /* MHIconButton.m in Sources */,
 				089AF62E1C849DAF004FB98C /* MHTabBarController.m in Sources */,
 				081A870A1C8496AB002C54B8 /* AppDelegate.m in Sources */,
 				089AF6311C849F7D004FB98C /* MHTabBar.m in Sources */,
 				08227C281C8586A2007950FB /* MHNavigationController.m in Sources */,
+				08FD64441C85D08E00DDFE3C /* MHHmgdController.m in Sources */,
 				081A87071C8496AB002C54B8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -680,6 +694,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/Carrot/Study/MHLottery/MHLottery/MH-Info.pch";
 				INFOPLIST_FILE = MHLottery/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -696,6 +713,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/Carrot/Study/MHLottery/MHLottery/MH-Info.pch";
 				INFOPLIST_FILE = MHLottery/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

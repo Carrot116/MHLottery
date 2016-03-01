@@ -7,7 +7,6 @@
 //
 
 #import "MHNavigationController.h"
-#define LATTER_IOS(version) ([[UIDevice currentDevice].systemVersion floatValue] >= (version))
 
 @interface MHNavigationController ()
 
