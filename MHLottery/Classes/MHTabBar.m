@@ -7,16 +7,16 @@
 //
 
 #import "MHTabBar.h"
-#import "MHTabBarButton.h"
+#import "MHButton.h"
 
 @interface MHTabBar()
-@property (nonatomic, weak) MHTabBarButton* selectedButton;
+@property (nonatomic, weak) MHButton* selectedButton;
 
 @end
 
 @implementation MHTabBar
 - (void)addBarButtonWithImage:(NSString*)name selImage:(NSString*)selName{
-    MHTabBarButton* btn = [MHTabBarButton buttonWithType:UIButtonTypeCustom];
+    MHButton* btn = [MHButton buttonWithType:UIButtonTypeCustom];
     [btn setBackgroundImage:[UIImage imageNamed:name] forState:UIControlStateNormal];
     [btn setBackgroundImage:[UIImage imageNamed:selName] forState:UIControlStateSelected];
     btn.adjustsImageWhenHighlighted = NO;
@@ -30,7 +30,7 @@
     }
 }
 
-- (void)onClickButton:(MHTabBarButton*)sender{
+- (void)onClickButton:(MHButton*)sender{
     if ([self.delegate respondsToSelector:@selector(tabBar:didChangeButtonFrom:To:)]) {
         [self.delegate tabBar:self didChangeButtonFrom:self.selectedButton.tag To:sender.tag];
     }

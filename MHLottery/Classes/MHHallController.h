@@ -1,13 +1,13 @@
 //
-//  MHTarBarButton.h
+//  MHHallController.h
 //  MHLottery
 //
-//  Created by carrot on 16/2/29.
+//  Created by Carrot on 16/3/2.
 //  Copyright © 2016年 carrot. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface MHTabBarButton : UIButton
+@interface MHHallController : UITableViewController
 
 @end

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vh6-qV-oMb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vh6-qV-oMb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -49,7 +50,7 @@
         <!--购彩大厅-->
         <scene sceneID="lsI-bU-1ZA">
             <objects>
-                <tableViewController id="JGa-Od-nMs" sceneMemberID="viewController">
+                <tableViewController id="JGa-Od-nMs" customClass="MHHallController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="5Lz-Lt-243">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -247,7 +248,7 @@
         <!--我的彩票-->
         <scene sceneID="Ykh-9s-pwb">
             <objects>
-                <viewController id="hlx-Ul-kp7" sceneMemberID="viewController">
+                <viewController id="hlx-Ul-kp7" customClass="MHLoginController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2Aw-Xq-y7t"/>
                         <viewControllerLayoutGuide type="bottom" id="acu-yx-DAj"/>
@@ -255,11 +256,75 @@
                     <view key="view" contentMode="scaleToFill" id="usM-1B-cKo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="578"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Caj-FX-ssj">
+                                <rect key="frame" x="8" y="68" width="304" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="K1X-so-sEH"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIl-b0-srm">
+                                <rect key="frame" x="16" y="208" width="288" height="34"/>
+                                <state key="normal" title="登录">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickLogin:" destination="hlx-Ul-kp7" eventType="touchUpInside" id="Fb2-Dt-O1D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqj-VJ-qcE">
+                                <rect key="frame" x="16" y="257" width="64" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="忘记密码?"/>
+                                <connections>
+                                    <action selector="onClickForgetPwd:" destination="hlx-Ul-kp7" eventType="touchUpInside" id="5Y1-x1-eeu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Uw-Vt-GwJ">
+                                <rect key="frame" x="120" y="257" width="30" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="注册"/>
+                                <connections>
+                                    <action selector="onClickRegister:" destination="hlx-Ul-kp7" eventType="touchUpInside" id="lkN-lX-pFe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Uw-Vt-GwJ" firstAttribute="centerY" secondItem="pqj-VJ-qcE" secondAttribute="centerY" id="8Rs-6s-Iq1"/>
+                            <constraint firstItem="sIl-b0-srm" firstAttribute="top" secondItem="Caj-FX-ssj" secondAttribute="bottom" constant="20" id="BJf-ag-upP"/>
+                            <constraint firstAttribute="trailing" secondItem="Caj-FX-ssj" secondAttribute="trailing" constant="8" id="I9n-X6-3ZT"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="pqj-VJ-qcE" secondAttribute="leading" id="Ro7-jT-e90"/>
+                            <constraint firstItem="pqj-VJ-qcE" firstAttribute="top" secondItem="sIl-b0-srm" secondAttribute="bottom" constant="15" id="TeR-nX-W33"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sIl-b0-srm" secondAttribute="trailing" id="b25-By-fHi"/>
+                            <constraint firstItem="Caj-FX-ssj" firstAttribute="leading" secondItem="usM-1B-cKo" secondAttribute="leading" constant="8" id="lKo-6u-QM5"/>
+                            <constraint firstItem="Caj-FX-ssj" firstAttribute="top" secondItem="2Aw-Xq-y7t" secondAttribute="bottom" constant="4" id="vGy-5q-n7l"/>
+                            <constraint firstItem="sIl-b0-srm" firstAttribute="leading" secondItem="usM-1B-cKo" secondAttribute="leadingMargin" id="wT9-d7-4Wc"/>
+                            <constraint firstItem="8Uw-Vt-GwJ" firstAttribute="leading" secondItem="pqj-VJ-qcE" secondAttribute="trailing" constant="40" id="y3m-bd-34f"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="我的彩票" id="0wf-Mp-fDI"/>
+                    <navigationItem key="navigationItem" title="我的彩票" id="0wf-Mp-fDI">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="jGT-E3-I7r">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Kag-hh-51F">
+                                <rect key="frame" x="16" y="11" width="49" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="客服" image="FBMM_Barbutton"/>
+                            </button>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="Mylottery_config" id="Llt-5c-RaM">
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="578"/>
+                    <connections>
+                        <outlet property="imageHeightConstraint" destination="K1X-so-sEH" id="K7u-Em-ja4"/>
+                        <outlet property="loginBtn" destination="sIl-b0-srm" id="QF8-uV-Ofz"/>
+                        <outlet property="loginImageView" destination="Caj-FX-ssj" id="UJm-7K-BqU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pJ4-vl-T1N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -267,6 +332,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="FBMM_Barbutton" width="13" height="13"/>
+        <image name="LoginScreen" width="296" height="138"/>
+        <image name="Mylottery_config" width="22" height="22"/>
         <image name="YellowDownArrow" width="16" height="16"/>
         <image name="zixunBarFlat" width="13" height="11"/>
     </resources>

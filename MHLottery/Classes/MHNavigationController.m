@@ -34,7 +34,12 @@
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
     attrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
     attrs[NSFontAttributeName] = [UIFont systemFontOfSize:16];
-    [navBar setTitleTextAttributes:attrs];}
+    [navBar setTitleTextAttributes:attrs];
+    
+    // 导航按钮设置
+    UIBarButtonItem* navItem = [UIBarButtonItem appearance];
+    navItem.tintColor = [UIColor whiteColor];
+}
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     viewController.hidesBottomBarWhenPushed = YES;
