@@ -99,7 +99,7 @@
 
 - (IBAction)onClickTitle:(MHIconButton *)sender {
     __block BOOL bUp = NO;
-    [UIView animateWithDuration:0.1 animations:^{
+    [UIView animateWithDuration:0.25 animations:^{
         sender.imageView.transform = CGAffineTransformRotate(sender.imageView.transform, bUp ? -M_PI :M_PI);
    //     sender.imageView.transform = CGAffineTransformMakeRotation(bUp ? 0 :M_PI);
         bUp = !bUp;
