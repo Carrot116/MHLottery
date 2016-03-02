@@ -27,8 +27,10 @@
     if (NO == LATTER_IOS(7.0)){
         navImage = [UIImage imageNamed:@"NavBar"];
     }
-    
     [navBar setBackgroundImage:navImage forBarMetrics:UIBarMetricsDefault];
+    // 导航返回按钮
+    [navBar setTintColor:[UIColor whiteColor]];
+
     
     // 设置标题文字颜色
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];

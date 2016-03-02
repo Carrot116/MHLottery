@@ -9,6 +9,7 @@
 #import "MHLoginController.h"
 #import "UIImage+MHExtension.h"
 #import "MHButton.h"
+#import "MHSettingController.h"
 
 @interface MHLoginController ()
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
@@ -18,6 +19,7 @@
 - (IBAction)onClickLogin:(id)sender;
 - (IBAction)onClickForgetPwd:(id)sender;
 - (IBAction)onClickRegister:(id)sender;
+- (IBAction)onSetting:(id)sender;
 @end
 
 @implementation MHLoginController
@@ -60,5 +62,10 @@
 - (IBAction)onClickRegister:(id)sender {
     NSLog(@"---- onClickRegister");
 
+}
+
+- (IBAction)onSetting:(id)sender {
+    MHSettingController* settingController = [[MHSettingController alloc]init];
+    [self.navigationController pushViewController:settingController animated:YES];
 }
 @end
