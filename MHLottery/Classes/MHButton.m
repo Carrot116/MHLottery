@@ -6,9 +6,9 @@
 //  Copyright © 2016年 carrot. All rights reserved.
 //
 
-#import "MHTabBarButton.h"
+#import "MHButton.h"
 
-@implementation MHTabBarButton
+@implementation MHButton
 
 - (void)setHighlighted:(BOOL)highlighted{
     

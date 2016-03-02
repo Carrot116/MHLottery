@@ -15,9 +15,12 @@
 		081A87201C8496AB002C54B8 /* MHLotteryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 081A871F1C8496AB002C54B8 /* MHLotteryTests.m */; };
 		081A872B1C8496AB002C54B8 /* MHLotteryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 081A872A1C8496AB002C54B8 /* MHLotteryUITests.m */; };
 		08227C281C8586A2007950FB /* MHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08227C271C8586A2007950FB /* MHNavigationController.m */; };
+		08227C2B1C8689CD007950FB /* MHLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08227C2A1C8689CD007950FB /* MHLoginController.m */; };
+		08227C301C868E7E007950FB /* UIImage+MHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 08227C2F1C868E7E007950FB /* UIImage+MHExtension.m */; };
+		08227C331C86989B007950FB /* MHHallController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08227C321C86989B007950FB /* MHHallController.m */; };
 		089AF62E1C849DAF004FB98C /* MHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 089AF62D1C849DAF004FB98C /* MHTabBarController.m */; };
 		089AF6311C849F7D004FB98C /* MHTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 089AF6301C849F7D004FB98C /* MHTabBar.m */; };
-		089AF6341C849FB6004FB98C /* MHTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 089AF6331C849FB6004FB98C /* MHTabBarButton.m */; };
+		089AF6341C849FB6004FB98C /* MHButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 089AF6331C849FB6004FB98C /* MHButton.m */; };
 		08F181751C85BDD9000FFBAF /* MHIconButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F181741C85BDD9000FFBAF /* MHIconButton.m */; };
 		08FD64441C85D08E00DDFE3C /* MHHmgdController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FD64431C85D08E00DDFE3C /* MHHmgdController.m */; };
 /* End PBXBuildFile section */
@@ -56,12 +59,18 @@
 		081A872C1C8496AB002C54B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08227C261C8586A2007950FB /* MHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHNavigationController.h; path = Classes/MHNavigationController.h; sourceTree = "<group>"; };
 		08227C271C8586A2007950FB /* MHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHNavigationController.m; path = Classes/MHNavigationController.m; sourceTree = "<group>"; };
+		08227C291C8689CD007950FB /* MHLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHLoginController.h; path = Classes/MHLoginController.h; sourceTree = "<group>"; };
+		08227C2A1C8689CD007950FB /* MHLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHLoginController.m; path = Classes/MHLoginController.m; sourceTree = "<group>"; };
+		08227C2E1C868E7E007950FB /* UIImage+MHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+MHExtension.h"; path = "Classes/UIImage+MHExtension.h"; sourceTree = "<group>"; };
+		08227C2F1C868E7E007950FB /* UIImage+MHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MHExtension.m"; path = "Classes/UIImage+MHExtension.m"; sourceTree = "<group>"; };
+		08227C311C86989B007950FB /* MHHallController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHHallController.h; path = Classes/MHHallController.h; sourceTree = "<group>"; };
+		08227C321C86989B007950FB /* MHHallController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHHallController.m; path = Classes/MHHallController.m; sourceTree = "<group>"; };
 		089AF62C1C849DAF004FB98C /* MHTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHTabBarController.h; path = Classes/MHTabBarController.h; sourceTree = "<group>"; };
 		089AF62D1C849DAF004FB98C /* MHTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHTabBarController.m; path = Classes/MHTabBarController.m; sourceTree = "<group>"; };
 		089AF62F1C849F7D004FB98C /* MHTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHTabBar.h; path = Classes/MHTabBar.h; sourceTree = "<group>"; };
 		089AF6301C849F7D004FB98C /* MHTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHTabBar.m; path = Classes/MHTabBar.m; sourceTree = "<group>"; };
-		089AF6321C849FB6004FB98C /* MHTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHTabBarButton.h; path = Classes/MHTabBarButton.h; sourceTree = "<group>"; };
-		089AF6331C849FB6004FB98C /* MHTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHTabBarButton.m; path = Classes/MHTabBarButton.m; sourceTree = "<group>"; };
+		089AF6321C849FB6004FB98C /* MHButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHButton.h; path = Classes/MHButton.h; sourceTree = "<group>"; };
+		089AF6331C849FB6004FB98C /* MHButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHButton.m; path = Classes/MHButton.m; sourceTree = "<group>"; };
 		08F181731C85BDD9000FFBAF /* MHIconButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHIconButton.h; sourceTree = "<group>"; };
 		08F181741C85BDD9000FFBAF /* MHIconButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHIconButton.m; sourceTree = "<group>"; };
 		08FD64411C85C37C00DDFE3C /* MH-Info.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MH-Info.pch"; sourceTree = "<group>"; };
@@ -166,12 +175,13 @@
 		081A87391C849812002C54B8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				089AF6111C849BC5004FB98C /* Hall(购彩大厅) */,
-				089AF6121C849BD2004FB98C /* Documentary(合买跟单) */,
-				089AF6131C849C24004FB98C /* Open(开奖信息) */,
-				089AF6151C849C41004FB98C /* Lucky(幸运广场) */,
-				089AF6141C849C3E004FB98C /* Me(我的彩票) */,
-				089AF6161C849C84004FB98C /* Setting(设置) */,
+				08227C2C1C868D5C007950FB /* Other */,
+				089AF6111C849BC5004FB98C /* Hall */,
+				089AF6121C849BD2004FB98C /* Documentary */,
+				089AF6131C849C24004FB98C /* Open */,
+				089AF6151C849C41004FB98C /* Lucky */,
+				089AF6141C849C3E004FB98C /* Me */,
+				089AF6161C849C84004FB98C /* Setting */,
 				081A873B1C849870002C54B8 /* Main */,
 			);
 			name = Classes;
@@ -191,69 +201,86 @@
 				089AF6191C849CA3004FB98C /* Model */,
 				089AF6181C849CA0004FB98C /* View */,
 				089AF6171C849C9D004FB98C /* Controller */,
-				081A870E1C8496AB002C54B8 /* Main.storyboard */,
 			);
 			name = Main;
 			sourceTree = "<group>";
 		};
-		089AF6111C849BC5004FB98C /* Hall(购彩大厅) */ = {
+		08227C2C1C868D5C007950FB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				08227C2D1C868D67007950FB /* Category */,
+				081A870E1C8496AB002C54B8 /* Main.storyboard */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		08227C2D1C868D67007950FB /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				08227C2E1C868E7E007950FB /* UIImage+MHExtension.h */,
+				08227C2F1C868E7E007950FB /* UIImage+MHExtension.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		089AF6111C849BC5004FB98C /* Hall */ = {
 			isa = PBXGroup;
 			children = (
 				089AF62B1C849D59004FB98C /* Model */,
 				089AF62A1C849D57004FB98C /* View */,
 				089AF6291C849D54004FB98C /* Contrllelr */,
 			);
-			name = "Hall(购彩大厅)";
+			name = Hall;
 			sourceTree = "<group>";
 		};
-		089AF6121C849BD2004FB98C /* Documentary(合买跟单) */ = {
+		089AF6121C849BD2004FB98C /* Documentary */ = {
 			isa = PBXGroup;
 			children = (
 				089AF6281C849D43004FB98C /* Model */,
 				089AF6271C849D40004FB98C /* View */,
 				089AF6261C849D3C004FB98C /* Controller */,
 			);
-			name = "Documentary(合买跟单)";
+			name = Documentary;
 			sourceTree = "<group>";
 		};
-		089AF6131C849C24004FB98C /* Open(开奖信息) */ = {
+		089AF6131C849C24004FB98C /* Open */ = {
 			isa = PBXGroup;
 			children = (
 				089AF6251C849D28004FB98C /* Model */,
 				089AF6241C849D24004FB98C /* View */,
 				089AF6231C849D1E004FB98C /* Controller */,
 			);
-			name = "Open(开奖信息)";
+			name = Open;
 			sourceTree = "<group>";
 		};
-		089AF6141C849C3E004FB98C /* Me(我的彩票) */ = {
+		089AF6141C849C3E004FB98C /* Me */ = {
 			isa = PBXGroup;
 			children = (
 				089AF61F1C849CE7004FB98C /* Model */,
 				089AF61E1C849CE4004FB98C /* View */,
 				089AF61D1C849CE1004FB98C /* Controller */,
 			);
-			name = "Me(我的彩票)";
+			name = Me;
 			sourceTree = "<group>";
 		};
-		089AF6151C849C41004FB98C /* Lucky(幸运广场) */ = {
+		089AF6151C849C41004FB98C /* Lucky */ = {
 			isa = PBXGroup;
 			children = (
 				089AF6221C849D0E004FB98C /* Model */,
 				089AF6211C849D0A004FB98C /* View */,
 				089AF6201C849D07004FB98C /* Controller */,
 			);
-			name = "Lucky(幸运广场)";
+			name = Lucky;
 			sourceTree = "<group>";
 		};
-		089AF6161C849C84004FB98C /* Setting(设置) */ = {
+		089AF6161C849C84004FB98C /* Setting */ = {
 			isa = PBXGroup;
 			children = (
 				089AF61C1C849CC1004FB98C /* Model */,
 				089AF61B1C849CBE004FB98C /* View */,
 				089AF61A1C849CB9004FB98C /* Controller */,
 			);
-			name = "Setting(设置)";
+			name = Setting;
 			sourceTree = "<group>";
 		};
 		089AF6171C849C9D004FB98C /* Controller */ = {
@@ -272,8 +299,8 @@
 			children = (
 				089AF62F1C849F7D004FB98C /* MHTabBar.h */,
 				089AF6301C849F7D004FB98C /* MHTabBar.m */,
-				089AF6321C849FB6004FB98C /* MHTabBarButton.h */,
-				089AF6331C849FB6004FB98C /* MHTabBarButton.m */,
+				089AF6321C849FB6004FB98C /* MHButton.h */,
+				089AF6331C849FB6004FB98C /* MHButton.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -309,6 +336,8 @@
 		089AF61D1C849CE1004FB98C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				08227C291C8689CD007950FB /* MHLoginController.h */,
+				08227C2A1C8689CD007950FB /* MHLoginController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -397,6 +426,8 @@
 		089AF6291C849D54004FB98C /* Contrllelr */ = {
 			isa = PBXGroup;
 			children = (
+				08227C311C86989B007950FB /* MHHallController.h */,
+				08227C321C86989B007950FB /* MHHallController.m */,
 			);
 			name = Contrllelr;
 			sourceTree = "<group>";
@@ -545,14 +576,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				089AF6341C849FB6004FB98C /* MHTabBarButton.m in Sources */,
+				08227C301C868E7E007950FB /* UIImage+MHExtension.m in Sources */,
+				089AF6341C849FB6004FB98C /* MHButton.m in Sources */,
 				08F181751C85BDD9000FFBAF /* MHIconButton.m in Sources */,
 				089AF62E1C849DAF004FB98C /* MHTabBarController.m in Sources */,
 				081A870A1C8496AB002C54B8 /* AppDelegate.m in Sources */,
 				089AF6311C849F7D004FB98C /* MHTabBar.m in Sources */,
 				08227C281C8586A2007950FB /* MHNavigationController.m in Sources */,
 				08FD64441C85D08E00DDFE3C /* MHHmgdController.m in Sources */,
+				08227C2B1C8689CD007950FB /* MHLoginController.m in Sources */,
 				081A87071C8496AB002C54B8 /* main.m in Sources */,
+				08227C331C86989B007950FB /* MHHallController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,7 +730,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/Carrot/Study/MHLottery/MHLottery/MH-Info.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MHLottery/MH-Info.pch";
 				INFOPLIST_FILE = MHLottery/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -715,7 +749,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/Carrot/Study/MHLottery/MHLottery/MH-Info.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MHLottery/MH-Info.pch";
 				INFOPLIST_FILE = MHLottery/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
