@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MHBaseSettingController.h"
 
-@interface MHSettingController : UITableViewController
+@interface MHSettingController : MHBaseSettingController
 
 @end

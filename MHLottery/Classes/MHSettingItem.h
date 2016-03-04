@@ -6,12 +6,16 @@
 //  Copyright © 2016年 carrot. All rights reserved.
 //
 
+typedef void (^SettingItemOptionBlock)();
+
 #import <Foundation/Foundation.h>
 
 @interface MHSettingItem : NSObject
 @property (nonatomic, copy) NSString* icon;
 @property (nonatomic, copy) NSString* title;
-@property (nonatomic, assign) Class destVcClass;
 
-+ (instancetype)itemWithIcon:(NSString*)icon title:(NSString*)title destVcClass:(Class)class;
+@property (nonatomic, copy) SettingItemOptionBlock option;
++ (instancetype)itemWithIcon:(NSString*)icon title:(NSString*)title;
+
++ (instancetype)itemWithTitle:(NSString*)title;
 @end

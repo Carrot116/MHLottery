@@ -10,11 +10,14 @@
 
 @implementation MHSettingItem
 
-+ (instancetype)itemWithIcon:(NSString*)icon title:(NSString*)title destVcClass:(Class)class{
++ (instancetype)itemWithIcon:(NSString*)icon title:(NSString*)title{
     MHSettingItem *item = [[self alloc]init];
     item.icon = icon;
     item.title = title;
-    item.destVcClass = class;
     return item;
+}
+
++ (instancetype)itemWithTitle:(NSString*)title{
+    return [self itemWithIcon:nil title:title];
 }
 @end

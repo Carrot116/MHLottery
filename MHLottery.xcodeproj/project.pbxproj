@@ -21,9 +21,19 @@
 		08227C361C86D968007950FB /* MHSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08227C351C86D968007950FB /* MHSettingController.m */; };
 		08227C391C86DF2F007950FB /* MHSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 08227C381C86DF2F007950FB /* MHSettingItem.m */; };
 		0835E2C31C86EF8B00F25EE9 /* MHSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 0835E2C21C86EF8B00F25EE9 /* MHSettingGroup.m */; };
+		0835E2C61C87DB5900F25EE9 /* MHBaseSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0835E2C51C87DB5900F25EE9 /* MHBaseSettingController.m */; };
+		0835E2CA1C87DE5800F25EE9 /* MHPushNotiController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0835E2C91C87DE5800F25EE9 /* MHPushNotiController.m */; };
+		0835E2CD1C87E15B00F25EE9 /* MHSettingArrowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0835E2CC1C87E15B00F25EE9 /* MHSettingArrowItem.m */; };
+		0835E2D01C87E17D00F25EE9 /* MHSettingSwitchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0835E2CF1C87E17D00F25EE9 /* MHSettingSwitchItem.m */; };
+		0835E2D31C87E54500F25EE9 /* MHSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0835E2D21C87E54500F25EE9 /* MHSettingCell.m */; };
 		089AF62E1C849DAF004FB98C /* MHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 089AF62D1C849DAF004FB98C /* MHTabBarController.m */; };
 		089AF6311C849F7D004FB98C /* MHTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 089AF6301C849F7D004FB98C /* MHTabBar.m */; };
 		089AF6341C849FB6004FB98C /* MHButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 089AF6331C849FB6004FB98C /* MHButton.m */; };
+		08D200091C8815D800C6CB0E /* MHSettingHelpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D200081C8815D800C6CB0E /* MHSettingHelpController.m */; };
+		08D2000C1C88163500C6CB0E /* help.json in Resources */ = {isa = PBXBuildFile; fileRef = 08D2000B1C88163500C6CB0E /* help.json */; };
+		08D2000E1C88164800C6CB0E /* Html in Resources */ = {isa = PBXBuildFile; fileRef = 08D2000D1C88164800C6CB0E /* Html */; };
+		08D200141C8816A700C6CB0E /* MHHelperItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D200131C8816A700C6CB0E /* MHHelperItem.m */; };
+		08D200171C881C0500C6CB0E /* MHHelpWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D200161C881C0500C6CB0E /* MHHelpWebController.m */; };
 		08F181751C85BDD9000FFBAF /* MHIconButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F181741C85BDD9000FFBAF /* MHIconButton.m */; };
 		08FD64441C85D08E00DDFE3C /* MHHmgdController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FD64431C85D08E00DDFE3C /* MHHmgdController.m */; };
 /* End PBXBuildFile section */
@@ -74,12 +84,30 @@
 		08227C381C86DF2F007950FB /* MHSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHSettingItem.m; path = Classes/MHSettingItem.m; sourceTree = "<group>"; };
 		0835E2C11C86EF8B00F25EE9 /* MHSettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHSettingGroup.h; path = Classes/MHSettingGroup.h; sourceTree = "<group>"; };
 		0835E2C21C86EF8B00F25EE9 /* MHSettingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHSettingGroup.m; path = Classes/MHSettingGroup.m; sourceTree = "<group>"; };
+		0835E2C41C87DB5900F25EE9 /* MHBaseSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHBaseSettingController.h; path = Classes/MHBaseSettingController.h; sourceTree = "<group>"; };
+		0835E2C51C87DB5900F25EE9 /* MHBaseSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHBaseSettingController.m; path = Classes/MHBaseSettingController.m; sourceTree = "<group>"; };
+		0835E2C81C87DE5800F25EE9 /* MHPushNotiController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHPushNotiController.h; path = Classes/MHPushNotiController.h; sourceTree = "<group>"; };
+		0835E2C91C87DE5800F25EE9 /* MHPushNotiController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHPushNotiController.m; path = Classes/MHPushNotiController.m; sourceTree = "<group>"; };
+		0835E2CB1C87E15B00F25EE9 /* MHSettingArrowItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHSettingArrowItem.h; path = Classes/MHSettingArrowItem.h; sourceTree = "<group>"; };
+		0835E2CC1C87E15B00F25EE9 /* MHSettingArrowItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHSettingArrowItem.m; path = Classes/MHSettingArrowItem.m; sourceTree = "<group>"; };
+		0835E2CE1C87E17D00F25EE9 /* MHSettingSwitchItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHSettingSwitchItem.h; path = Classes/MHSettingSwitchItem.h; sourceTree = "<group>"; };
+		0835E2CF1C87E17D00F25EE9 /* MHSettingSwitchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHSettingSwitchItem.m; path = Classes/MHSettingSwitchItem.m; sourceTree = "<group>"; };
+		0835E2D11C87E54500F25EE9 /* MHSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHSettingCell.h; path = Classes/MHSettingCell.h; sourceTree = "<group>"; };
+		0835E2D21C87E54500F25EE9 /* MHSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHSettingCell.m; path = Classes/MHSettingCell.m; sourceTree = "<group>"; };
 		089AF62C1C849DAF004FB98C /* MHTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHTabBarController.h; path = Classes/MHTabBarController.h; sourceTree = "<group>"; };
 		089AF62D1C849DAF004FB98C /* MHTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHTabBarController.m; path = Classes/MHTabBarController.m; sourceTree = "<group>"; };
 		089AF62F1C849F7D004FB98C /* MHTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHTabBar.h; path = Classes/MHTabBar.h; sourceTree = "<group>"; };
 		089AF6301C849F7D004FB98C /* MHTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHTabBar.m; path = Classes/MHTabBar.m; sourceTree = "<group>"; };
 		089AF6321C849FB6004FB98C /* MHButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHButton.h; path = Classes/MHButton.h; sourceTree = "<group>"; };
 		089AF6331C849FB6004FB98C /* MHButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHButton.m; path = Classes/MHButton.m; sourceTree = "<group>"; };
+		08D200071C8815D800C6CB0E /* MHSettingHelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHSettingHelpController.h; path = Classes/MHSettingHelpController.h; sourceTree = "<group>"; };
+		08D200081C8815D800C6CB0E /* MHSettingHelpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHSettingHelpController.m; path = Classes/MHSettingHelpController.m; sourceTree = "<group>"; };
+		08D2000B1C88163500C6CB0E /* help.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = help.json; sourceTree = "<group>"; };
+		08D2000D1C88164800C6CB0E /* Html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Html; sourceTree = "<group>"; };
+		08D200121C8816A700C6CB0E /* MHHelperItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHHelperItem.h; path = Classes/MHHelperItem.h; sourceTree = "<group>"; };
+		08D200131C8816A700C6CB0E /* MHHelperItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHHelperItem.m; path = Classes/MHHelperItem.m; sourceTree = "<group>"; };
+		08D200151C881C0500C6CB0E /* MHHelpWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHHelpWebController.h; path = Classes/MHHelpWebController.h; sourceTree = "<group>"; };
+		08D200161C881C0500C6CB0E /* MHHelpWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHHelpWebController.m; path = Classes/MHHelpWebController.m; sourceTree = "<group>"; };
 		08F181731C85BDD9000FFBAF /* MHIconButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHIconButton.h; sourceTree = "<group>"; };
 		08F181741C85BDD9000FFBAF /* MHIconButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHIconButton.m; sourceTree = "<group>"; };
 		08FD64411C85C37C00DDFE3C /* MH-Info.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MH-Info.pch"; sourceTree = "<group>"; };
@@ -199,6 +227,7 @@
 		081A873A1C849828002C54B8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				08D2000A1C88161300C6CB0E /* Data */,
 				081A87111C8496AB002C54B8 /* Assets.xcassets */,
 			);
 			name = Resources;
@@ -230,6 +259,15 @@
 				08227C2F1C868E7E007950FB /* UIImage+MHExtension.m */,
 			);
 			name = Category;
+			sourceTree = "<group>";
+		};
+		0835E2C71C87DE1F00F25EE9 /* Push */ = {
+			isa = PBXGroup;
+			children = (
+				0835E2C81C87DE5800F25EE9 /* MHPushNotiController.h */,
+				0835E2C91C87DE5800F25EE9 /* MHPushNotiController.m */,
+			);
+			name = Push;
 			sourceTree = "<group>";
 		};
 		089AF6111C849BC5004FB98C /* Hall */ = {
@@ -324,8 +362,12 @@
 		089AF61A1C849CB9004FB98C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				08D200061C8815A700C6CB0E /* Help */,
+				0835E2C71C87DE1F00F25EE9 /* Push */,
 				08227C341C86D968007950FB /* MHSettingController.h */,
 				08227C351C86D968007950FB /* MHSettingController.m */,
+				0835E2C41C87DB5900F25EE9 /* MHBaseSettingController.h */,
+				0835E2C51C87DB5900F25EE9 /* MHBaseSettingController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -333,6 +375,8 @@
 		089AF61B1C849CBE004FB98C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0835E2D11C87E54500F25EE9 /* MHSettingCell.h */,
+				0835E2D21C87E54500F25EE9 /* MHSettingCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -340,10 +384,9 @@
 		089AF61C1C849CC1004FB98C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				08227C371C86DF2F007950FB /* MHSettingItem.h */,
-				08227C381C86DF2F007950FB /* MHSettingItem.m */,
-				0835E2C11C86EF8B00F25EE9 /* MHSettingGroup.h */,
-				0835E2C21C86EF8B00F25EE9 /* MHSettingGroup.m */,
+				08D200111C88168700C6CB0E /* Help */,
+				08D200101C88167300C6CB0E /* CellItem */,
+				08D2000F1C88166A00C6CB0E /* TableGroup */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -461,6 +504,57 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		08D200061C8815A700C6CB0E /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				08D200071C8815D800C6CB0E /* MHSettingHelpController.h */,
+				08D200081C8815D800C6CB0E /* MHSettingHelpController.m */,
+				08D200151C881C0500C6CB0E /* MHHelpWebController.h */,
+				08D200161C881C0500C6CB0E /* MHHelpWebController.m */,
+			);
+			name = Help;
+			sourceTree = "<group>";
+		};
+		08D2000A1C88161300C6CB0E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				08D2000D1C88164800C6CB0E /* Html */,
+				08D2000B1C88163500C6CB0E /* help.json */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		08D2000F1C88166A00C6CB0E /* TableGroup */ = {
+			isa = PBXGroup;
+			children = (
+				0835E2C11C86EF8B00F25EE9 /* MHSettingGroup.h */,
+				0835E2C21C86EF8B00F25EE9 /* MHSettingGroup.m */,
+			);
+			name = TableGroup;
+			sourceTree = "<group>";
+		};
+		08D200101C88167300C6CB0E /* CellItem */ = {
+			isa = PBXGroup;
+			children = (
+				08227C371C86DF2F007950FB /* MHSettingItem.h */,
+				08227C381C86DF2F007950FB /* MHSettingItem.m */,
+				0835E2CB1C87E15B00F25EE9 /* MHSettingArrowItem.h */,
+				0835E2CC1C87E15B00F25EE9 /* MHSettingArrowItem.m */,
+				0835E2CE1C87E17D00F25EE9 /* MHSettingSwitchItem.h */,
+				0835E2CF1C87E17D00F25EE9 /* MHSettingSwitchItem.m */,
+			);
+			name = CellItem;
+			sourceTree = "<group>";
+		};
+		08D200111C88168700C6CB0E /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				08D200121C8816A700C6CB0E /* MHHelperItem.h */,
+				08D200131C8816A700C6CB0E /* MHHelperItem.m */,
+			);
+			name = Help;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -566,6 +660,8 @@
 			files = (
 				081A87151C8496AB002C54B8 /* LaunchScreen.storyboard in Resources */,
 				081A87121C8496AB002C54B8 /* Assets.xcassets in Resources */,
+				08D2000E1C88164800C6CB0E /* Html in Resources */,
+				08D2000C1C88163500C6CB0E /* help.json in Resources */,
 				081A87101C8496AB002C54B8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -592,19 +688,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				08227C301C868E7E007950FB /* UIImage+MHExtension.m in Sources */,
+				0835E2CD1C87E15B00F25EE9 /* MHSettingArrowItem.m in Sources */,
+				08D200171C881C0500C6CB0E /* MHHelpWebController.m in Sources */,
+				0835E2D01C87E17D00F25EE9 /* MHSettingSwitchItem.m in Sources */,
 				089AF6341C849FB6004FB98C /* MHButton.m in Sources */,
+				08D200091C8815D800C6CB0E /* MHSettingHelpController.m in Sources */,
 				08F181751C85BDD9000FFBAF /* MHIconButton.m in Sources */,
 				08227C361C86D968007950FB /* MHSettingController.m in Sources */,
+				0835E2CA1C87DE5800F25EE9 /* MHPushNotiController.m in Sources */,
+				0835E2C61C87DB5900F25EE9 /* MHBaseSettingController.m in Sources */,
 				089AF62E1C849DAF004FB98C /* MHTabBarController.m in Sources */,
 				081A870A1C8496AB002C54B8 /* AppDelegate.m in Sources */,
 				089AF6311C849F7D004FB98C /* MHTabBar.m in Sources */,
 				0835E2C31C86EF8B00F25EE9 /* MHSettingGroup.m in Sources */,
+				08D200141C8816A700C6CB0E /* MHHelperItem.m in Sources */,
 				08227C281C8586A2007950FB /* MHNavigationController.m in Sources */,
 				08FD64441C85D08E00DDFE3C /* MHHmgdController.m in Sources */,
 				08227C2B1C8689CD007950FB /* MHLoginController.m in Sources */,
 				08227C391C86DF2F007950FB /* MHSettingItem.m in Sources */,
 				081A87071C8496AB002C54B8 /* main.m in Sources */,
 				08227C331C86989B007950FB /* MHHallController.m in Sources */,
+				0835E2D31C87E54500F25EE9 /* MHSettingCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
